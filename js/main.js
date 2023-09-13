@@ -15,5 +15,4 @@ function time() {
 setInterval(time, 1000); // Call the 'time' function every 1000 milliseconds (1 second)
 
 
-
 /*/ ⬇ changes from a 12-hour and a 24-hour display on a button press ⬇ /*/
