@@ -1,0 +1,46 @@
+html {
+    background-image: linear-gradient(to bottom right,#144552,#182131,#182131,#312244);
+    height: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#clock {
+    font-size: 10vw;
+    font-family: sans-serif;
+    color: #006466;
+}
+
+.controls {
+    padding: 10px;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.setAlarm {
+    background-color: #00b4d8;
+}
+
+.resetAlarm {
+    background-color: #e63946;
+}
+
