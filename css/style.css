@@ -40,12 +40,24 @@ body {
     background-color: #00b4d8;
 }
 
+.setAlarm:hover {
+    background: #0099b8;
+}
+
 .clearAlarm {
     background-color: #e63946;
 }
 
+.clearAlarm:hover {
+    background: #c92a37;
+}
+
 .toggleFormat {
     background-color: #965bcc;
+}
+
+.toggleFormat:hover {
+    background-color: #7f3ac0;
 }
 
 input {
@@ -59,6 +71,11 @@ input {
     font-size: 15px;
     margin: 5px;
 }
+
+input:hover {
+    background: #575757;
+}
+
 
 
 
