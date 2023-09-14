@@ -1,7 +1,8 @@
 // initalize alarm clock
 const display = document.getElementById('clock'); 
 
-const audio = new Audio()
+const audio = new Audio("audio/ringtone-126505.mp3"); 
+audio.loop = true;
 let alarmTime = null;
 let alarmTimeout = null;
 
@@ -34,7 +35,7 @@ function setAlarm() {
 }
 
 function clearAlarm() {
-  audio.pause;
+  audio.pause();
   if (alarmTimeout) {
     clearTimeout(alarmTimeout);
     alert('Alarm Cleared')

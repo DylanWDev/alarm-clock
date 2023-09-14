@@ -18,7 +18,7 @@ body {
 #clock {
     font-size: 10vw;
     font-family: sans-serif;
-    color: #006466;
+    color: white;
 }
 
 .controls {
@@ -44,9 +44,17 @@ body {
     background-color: #e63946;
 }
 
-.hide {
-    display: none;
-  }
+input {
+    border: none;
+    border-radius: 5px;
+    background-color: #6e6e6e;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 5px;
+}
 
 
 
