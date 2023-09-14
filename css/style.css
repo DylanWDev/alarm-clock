@@ -40,8 +40,12 @@ body {
     background-color: #00b4d8;
 }
 
-.resetAlarm {
+.clearAlarm {
     background-color: #e63946;
+}
+
+.toggleFormat {
+    background-color: #965bcc;
 }
 
 input {
