@@ -1,4 +1,4 @@
-html {
+body {
     background-image: linear-gradient(to bottom right,#144552,#182131,#182131,#312244);
     height: 100%;
 }
@@ -43,4 +43,10 @@ html {
 .resetAlarm {
     background-color: #e63946;
 }
+
+.hide {
+    display: none;
+  }
+
+
 
