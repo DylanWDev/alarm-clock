@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(to bottom right,#144552,#182131,#182131,#312244);
+    background-image: linear-gradient(to bottom right,#144552, #182131,#182131,#312244);
     height: 100%;
 }
 
@@ -23,6 +23,9 @@ body {
 
 .controls {
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .button {
