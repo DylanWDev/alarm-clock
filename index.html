@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alarm Clock</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,7 +13,11 @@
         <div class="controls">
             <button onclick="setAlarm()" class="button setAlarm">Set Alarm</button>
             <button onclick="clearAlarm()" class="button clearAlarm">Clear Alarm</button>
-            <button onclick="toggleTimeFormat()" class ="button toggleFormat">Toggle Format</button>
+            <button onclick="toggleTimeFormat()" class="button toggleFormat">Toggle Format</button>
+        </div>
+
+        <div class="toastContainer">
+            <div id="toast" class="toast"></div>
         </div>
     </section>
     

@@ -70,6 +70,7 @@ input {
     cursor: pointer;
     font-size: 15px;
     margin: 5px;
+    width: 365px;
 }
 
 input:hover {

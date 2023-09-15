@@ -12,10 +12,11 @@ let is24Hour = true;
 // Function to update the time on the clock display
 function time() { 
   let d = new Date(); 
-  let s = d.getSeconds(); 
-  let m = d.getMinutes();
-  let h = d.getHours();
-   // Check if the time format is 12-hour or 24-hour
+  let s = ('0' + d.getSeconds()).slice(-2); 
+  let m = ('0' + d.getMinutes()).slice(-2);
+  let h = ('0' + d.getHours()).slice(-2);
+
+  // Check if the time format is 12-hour or 24-hour
   if (!is24Hour) {
     const ampm = h >= 12 ? 'PM' : 'AM';
     h = h % 12 || 12;
@@ -50,15 +51,15 @@ function clearAlarm() {
   audio.pause();
   if (alarmTimeout) {
     clearTimeout(alarmTimeout);
-    alert('Alarm Cleared')
+    alert('Alarm Cleared');
   }
 }
 
 // Function to toggle between 12-hour and 24-hour time formats
 function toggleTimeFormat() {
   is24Hour = !is24Hour;
-  updateTime();
+  Time();
 }
 
 // Update the time every 100 milliseconds
-setInterval(time, 100); 
+setInterval(time, 100);
