@@ -22,7 +22,7 @@ function time() {
     h = h % 12 || 12;
     display.textContent = `${h}:${m}:${s} ${ampm}`;
   } else {
-    display.textContent = `${h}:${m}:${s}`
+    display.textContent = `${h}:${m}:${s}`;
   }
 }
 
@@ -33,10 +33,10 @@ function setAlarmTime(value) {
 
 // Function to set the alarm based on the set time
 function setAlarm() {
-  if (alarmTime) {
+  if (alarmTime) { // Check if an alarm time is set
     const current = new Date();
     const timeUntilAlarm = new Date(alarmTime);
- // Calculate the time difference between now and the alarm time
+ // Calculate the time difference between alarm time and current time
     if (timeUntilAlarm > current) {
       const timeout = timeUntilAlarm.getTime() - current.getTime();
       // Set a timeout to trigger the alarm sound
@@ -58,7 +58,7 @@ function clearAlarm() {
 // Function to toggle between 12-hour and 24-hour time formats
 function toggleTimeFormat() {
   is24Hour = !is24Hour;
-  Time();
+  time();
 }
 
 // Update the time every 100 milliseconds
