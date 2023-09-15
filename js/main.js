@@ -18,7 +18,7 @@ function time() {
 
   // Check if the time format is 12-hour or 24-hour
   if (!is24Hour) {
-    const ampm = h >= 12 ? 'PM' : 'AM';
+    const ampm = h >= 12 ? '🔅' : '🌙';
     h = h % 12 || 12;
     display.textContent = `${h}:${m}:${s} ${ampm}`;
   } else {
