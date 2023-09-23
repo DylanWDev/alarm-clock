@@ -9,7 +9,7 @@
 <body>
     <section class="container">
         <div id="clock"></div>
-        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local"></input>
+        <input onchange="setAlarmTime(this.value)" name="alarmTime" type="datetime-local" step="1"></input>
         <div class="controls">
             <button onclick="setAlarm()" class="button setAlarm">Set Alarm</button>
             <button onclick="clearAlarm()" class="button clearAlarm">Clear Alarm</button>
